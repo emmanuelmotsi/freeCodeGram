@@ -18,6 +18,8 @@ class PostsController extends Controller
             'image' => 'required|image',
         ]);
 
+        
+
         \App\Post::create($data);
 
         dd(request()->all()); 
